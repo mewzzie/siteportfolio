@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Portfólio Amanda</title>
+    <style>
+        /* Resetando margens e preenchimentos para evitar espaçamentos indesejados */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif; /* Define a fonte do site */
+        }
+        
+        /* Define o fundo da página e a cor do texto */
+        body {
+            background: linear-gradient(135deg, #ff2969, #981bff, #30d6ff, #3effa5, #ffb3ff); /* Cor de fundo */
+            color: #ffffff;
+            padding-top: 140px; /* Ajuste o valor para dar o espaço adequado abaixo do header */
+        }
+        
+        /* Cabeçalho fixo com altura definida */
+        header {
+            background: #050505; /* Fundo escuro */
+            color: white; /* Texto branco */
+            padding: 15px 0; /* Define o padding, deixando o cabeçalho com altura fixa */
+            text-align: center; /* Centraliza o conteúdo */
+            position: fixed; /* Torna o header fixo */
+            top: 0; /* Coloca o header no topo da página */
+            left: 0; /* Garante que o header fique alinhado à esquerda */
+            width: 100%; /* Garante que o header ocupe toda a largura da tela */
+            z-index: 1000; /* Garante que o header fique acima do conteúdo da página */
+            transition: padding 0.3s ease; /* Suaviza a transição de padding */
+        }
+
+        /* Estiliza a navegação */
+        nav {
+            display: flex;
+            justify-content: center; /* Centraliza os itens na horizontal */
+            gap: 20px; /* Espaço entre os links */
+        }
+
+        /* Estiliza os links da navegação */
+        nav a {
+            color: white; /* Mantém os links brancos */
+            text-decoration: none; /* Remove o sublinhado */
+            font-size: 18px; /* Ajusta o tamanho da fonte */
+            padding: 10px 15px; /* Adiciona padding para dar espaço ao redor dos links */
+        }
+
+        /* Quando o mouse passa sobre o link */
+        nav a:hover {
+            background-color: #ff2969; /* Cor de fundo ao passar o mouse */
+            color: #fff;
+            border-radius: 15px; /* Bordas arredondadas */
+        }
+
+
+        
+        /* Define o estilo do contêiner principal */
+        .container {
+            max-width: 900px; /* Define a largura máxima */
+            margin: 20px auto; /* Centraliza na tela */
+            padding: 30px;
+            background-color: rgba(0, 0, 0, 0.7); /* Adiciona uma leve transparencia */
+            border-radius: 10px; /* Arredonda as bordas */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adiciona uma leve sombra */
+        }
+        
+        /* Define o espaçamento entre as seções */
+        section {
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            letter-spacing: 1px;
+        }
+
+        
+        /* Adiciona uma linha abaixo dos títulos das seções */
+        h2 {
+            border-bottom: 2px solid #ff2969;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        /* Estiliza o rodapé */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1b1b1b;
+            color: white;
+        }
+
+        /* Espaçamento para os parágrafos*/
+        .paragrafo {
+            margin-bottom: 1em; /* Espaço abaixo de cada parágrafo */
+            text-align: justify; /* Justifica o texto */
+        }
+        /* Estilização dos ícones das mídias sociais*/
+        .social-icons a {
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+            margin: 10px;
+            display: inline-block;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #ff2969; /* Cor de destaque ao passar o mouse */
+        }
+
+        .social-icons i {
+            margin-right: 8px; /* Espaço entre o ícone e o nome */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho do site -->
+    <header>
+        <h1>Meu Portfólio</h1>
+        <nav>
+            <a href="#sobre Mim">Sobre Mim</a> <!-- Link para a seção Sobre Mim -->
+            <a href="#projetos">Projetos</a> <!-- Link para a seção Projetos -->
+            <a href="#contato">Contato</a> <!-- Link para a seção Contato -->
+            <a href="#mídias sociais">Mídias Sociais</a> <!-- Link para a seção Mídias Sociais-->
+        </nav>
+    </header>
+    
+    <!-- Contêiner principal que agrupa o conteúdo -->
+    <div class="container">
+        
+        <!-- Seção Sobre Mim -->
+        <section id="sobre Mim">
+            <h2>Sobre Mim</h2>
+            <p class="paragrafo">Oi! Eu sou a Amanda Duarte, tenho 29 anos e atualmente moro no interior do Rio de Janeiro, em uma cidade chamada Miguel Pereira. Recentemente, me formei em Jogos Digitais pelo IFRJ, e, desde que comecei a estudar essa área, minha paixão por tecnologia e, principalmente, por jogos só aumentou.</p>
+            <p class="paragrafo">Se tem uma coisa que sempre esteve presente na minha vida, são os jogos. Sempre fui aquela pessoa que mergulha de cabeça em qualquer história, seja um enredo super complexo ou um jogo colorido feito para crianças de três anos. Eu me envolvo, me apego e curto cada detalhe — e acho que foi isso que me levou a escolher a área de Jogos Digitais quando decidi o que queria estudar.</p>
+            <p class="paragrafo">Por muito tempo, achei que meu caminho seria na arte 2D, texturização e criação de interfaces, mas nos últimos semestres do curso, a programação me pegou de jeito. No começo, apanhei bastante, mas foi justamente essa dificuldade que me fez desenvolver um hábito que carrego até hoje: comentar absolutamente tudo no código. O que começou como uma forma de me ajudar acabou virando uma maneira de tornar meu código mais acessível para qualquer pessoa que precise mexer nele depois.</p>
+            <p class="paragrafo">Durante o curso, tive que encarar o TCP (Trabalho de Conclusão de Período) todo semestre. Junto com um time, desenvolvíamos um jogo do zero em seis meses, organizando tudo: quem programava, quem fazia arte, som, game design… Se não entregasse no prazo, era reprovação na certa. Foi aí que aprendi a trabalhar em equipe, a me organizar e a entender que cada detalhe conta para um projeto dar certo.</p>
+            <p class="paragrafo">E foi aí que a Nuuvem apareceu na minha vida de um jeito diferente. Eu sempre estive perto, comprando jogos, acompanhando amigos criadores de conteúdo que são parceiros da plataforma, mas nunca tinha me imaginado trabalhando aqui — até ver essa vaga. E, de alguma forma, isso me motivou de um jeito absurdo. Seria a realização de um sonho poder contribuir para algo que já faz parte do meu dia a dia há tanto tempo.</p>
+            <p class="paragrafo">Sei que a vaga pede três anos de experiência, e eu ainda não cheguei lá, mas o que não me falta é motivação e aprendizado rápido. Quando entro em um desafio, eu mergulho de cabeça — do mesmo jeito que faço quando descubro um jogo novo e passo horas explorando cada mecânica.</p>
+            <p class="paragrafo">Gosto de criar interfaces bem estruturadas, acessíveis e responsivas, sempre buscando equilibrar código limpo com uma ótima experiência do usuário. Ainda não tive a oportunidade de trabalhar com Tailwind CSS ou Hotwired, mas sou curiosa e aprendo rápido. Se for algo essencial para a vaga, com certeza vou estudar e entender como aplicar no dia a dia.</p>
+            <p class="paragrafo">Se a Nuuvem quer alguém apaixonado por jogos e tecnologia, já estou com o controle na mão, só esperando dar o start! 🎮✨</p>
+        </section>
+        
+        <!-- Seção Projetos -->
+        <section id="projetos">
+            <h2>Projetos</h2>
+            <p>Aqui estarão alguns dos meus projetos em breve!</p>
+        </section>
+        
+        <!-- Seção Contato -->
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato pelo e-mail: <strong>amanda.duarte722@gmail.com</strong></p>
+        </section>
+
+        <!-- Seção Mídias Sociais -->
+        <section id="mídias sociais">
+            <h2>Mídias Sociais</h2>
+            <p class="paragrafo">Quer me conhecer melhor? Minhas Mídias Sociais estão abaixo!</p>
+    <div class="social-icons">
+        <a href="https://www.instagram.com/mewzzie" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://twitter.com/mewzzie" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+        <a href="https://www.tiktok.com/mewzzie" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+    </div>
+        </section>
+    </div>
+    
+    <!-- Rodapé do site -->
+    <footer>
+        <p>&copy; 2024 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
