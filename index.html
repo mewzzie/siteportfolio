@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <!-- pra se adaptar a diferentes telas e dispositivos -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <title>Portfólio Amanda</title>
@@ -117,6 +118,28 @@
             margin-right: 8px; /* Espaço entre o ícone e o nome */
         }
 
+        .projetos {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .projeto-item {
+            background-color: #ff2969;
+            color: white;
+            font-size: 18px;
+            padding: 15px;
+            border-radius: 10px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .projeto-item:hover {
+            background-color: #ff2969;
+        }
+
+
     </style>
 </head>
 <body>
@@ -142,15 +165,22 @@
             <p class="paragrafo">Por muito tempo, achei que meu caminho seria na arte 2D, texturização e criação de interfaces, mas nos últimos semestres do curso, a programação me pegou de jeito. No começo, apanhei bastante, mas foi justamente essa dificuldade que me fez desenvolver um hábito que carrego até hoje: comentar absolutamente tudo no código. O que começou como uma forma de me ajudar acabou virando uma maneira de tornar meu código mais acessível para qualquer pessoa que precise mexer nele depois.</p>
             <p class="paragrafo">Durante o curso, tive que encarar o TCP (Trabalho de Conclusão de Período) todo semestre. Junto com um time, desenvolvíamos um jogo do zero em seis meses, organizando tudo: quem programava, quem fazia arte, som, game design… Se não entregasse no prazo, era reprovação na certa. Foi aí que aprendi a trabalhar em equipe, a me organizar e a entender que cada detalhe conta para um projeto dar certo.</p>
             <p class="paragrafo">E foi aí que a Nuuvem apareceu na minha vida de um jeito diferente. Eu sempre estive perto, comprando jogos, acompanhando amigos criadores de conteúdo que são parceiros da plataforma, mas nunca tinha me imaginado trabalhando aqui — até ver essa vaga. E, de alguma forma, isso me motivou de um jeito absurdo. Seria a realização de um sonho poder contribuir para algo que já faz parte do meu dia a dia há tanto tempo.</p>
-            <p class="paragrafo">Sei que a vaga pede três anos de experiência, e eu ainda não cheguei lá, mas o que não me falta é motivação e aprendizado rápido. Quando entro em um desafio, eu mergulho de cabeça — do mesmo jeito que faço quando descubro um jogo novo e passo horas explorando cada mecânica.</p>
+            <p class="paragrafo">Sei que a vaga pede três anos de experiência, e eu ainda não cheguei lá, mas o que não me falta é motivação e aprendizado rápido. Quando entro em um desafio, eu mergulho de cabeça (do mesmo jeito que faço quando descubro um jogo novo e passo horas explorando cada mecânica).</p>
             <p class="paragrafo">Gosto de criar interfaces bem estruturadas, acessíveis e responsivas, sempre buscando equilibrar código limpo com uma ótima experiência do usuário. Ainda não tive a oportunidade de trabalhar com Tailwind CSS ou Hotwired, mas sou curiosa e aprendo rápido. Se for algo essencial para a vaga, com certeza vou estudar e entender como aplicar no dia a dia.</p>
-            <p class="paragrafo">Se a Nuuvem quer alguém apaixonado por jogos e tecnologia, já estou com o controle na mão, só esperando dar o start! 🎮✨</p>
+            <p class="paragrafo">Se a Nuuvem quer alguém apaixonado por jogos e tecnologia, já estou com o controle na mão, só esperando dar o start! 💖🎮</p>
         </section>
         
         <!-- Seção Projetos -->
         <section id="projetos">
             <h2>Projetos</h2>
-            <p>Aqui estarão alguns dos meus projetos em breve!</p>
+            <div class="projetos">
+                <a href="https://mewzzie.github.io/saladamista/" target="_blank" class="projeto-item">SALADA MISTA - Jogo da Memória</a>
+                <a href="https://mewzzie.github.io/pixelartbuilder/" target="_blank" class="projeto-item">PIXELART BUILDER - Criação de Desenhos em Pixel Art</a>
+                <a href="https://mewzzie.github.io/catlover/" target="_blank" class="projeto-item">CATLOVER - Dashboard Gamificado</a>
+                <a href="https://mewzzie.github.io/sitevendas/" target="_blank" class="projeto-item">Site para vendas</a>
+                <a href="https://mewzzie.github.io/bdayblueamanda/" target="_blank" class="projeto-item">Site de aniversário engraçadinho</a>
+            </div>
+            
         </section>
         
         <!-- Seção Contato -->
@@ -166,7 +196,8 @@
     <div class="social-icons">
         <a href="https://www.instagram.com/mewzzie" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
         <a href="https://twitter.com/mewzzie" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
-        <a href="https://www.tiktok.com/mewzzie" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://www.tiktok.com/@mewzzie" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a>
+        <a href="https://www.twitch.tv/mewzzie" target="_blank"><i class="fab fa-twitch"></i> Twitch</a>
     </div>
         </section>
     </div>
